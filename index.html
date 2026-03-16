@@ -111,10 +111,7 @@
       opacity: 0;
       animation: fadeUp 0.5s 0.12s forwards;
     }
-    .hero h1 em {
-      font-style: italic;
-      color: #a0a5ac;
-    }
+    .hero h1 em { font-style: italic; color: #a0a5ac; }
     .hero-sub {
       font-size: 0.9rem;
       color: #7e838a;
@@ -156,17 +153,16 @@
       padding: 0.6rem 1.2rem;
       transition: all 0.18s;
       display: inline-block;
+      cursor: pointer;
+      border: none;
     }
     .btn-solid  { background: var(--orange); color: var(--offwhite); }
     .btn-solid:hover { background: var(--copper); }
-    .btn-outline { border: 1px solid var(--border); color: var(--muted); }
+    .btn-outline { border: 1px solid var(--border); color: var(--muted); background: transparent; }
     .btn-outline:hover { border-color: var(--graphite); color: var(--offwhite); }
 
     /* Headshot */
-    .headshot {
-      opacity: 0;
-      animation: fadeIn 0.7s 0.4s forwards;
-    }
+    .headshot { opacity: 0; animation: fadeIn 0.7s 0.4s forwards; }
     .headshot img {
       width: 100%;
       height: 230px;
@@ -185,7 +181,7 @@
       margin-top: 0.5rem;
     }
 
-    /* ── Section wrapper ── */
+    /* ── Sections ── */
     .section { border-top: 1px solid var(--border); }
     .section-pad { padding: 4rem 0; }
     .eyebrow {
@@ -212,12 +208,7 @@
     }
 
     /* ── Tiers ── */
-    .tiers {
-      border: 1px solid var(--border);
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
+    .tiers { border: 1px solid var(--border); display: flex; flex-direction: column; }
     .tier {
       padding: 1.6rem 1.75rem;
       display: grid;
@@ -228,46 +219,13 @@
     }
     .tier:last-child { border-bottom: none; }
     .tier:hover { background: var(--surface); }
-    .tier-id {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.62rem;
-      color: var(--orange);
-      letter-spacing: 0.08em;
-      padding-top: 3px;
-    }
-    .tier-name {
-      font-size: 0.92rem;
-      font-weight: 500;
-      color: var(--offwhite);
-      margin-bottom: 0.2rem;
-    }
-    .tier-eta {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.65rem;
-      color: var(--muted);
-      margin-bottom: 0.55rem;
-    }
-    .tier-copy {
-      font-size: 0.83rem;
-      color: #72777e;
-      line-height: 1.65;
-      max-width: 460px;
-    }
-    .tier-rate {
-      text-align: right;
-      white-space: nowrap;
-      padding-top: 3px;
-    }
-    .tier-rate a {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.65rem;
-      letter-spacing: 0.05em;
-      color: var(--orange);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
+    .tier-id { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: var(--orange); letter-spacing: 0.08em; padding-top: 3px; }
+    .tier-name { font-size: 0.92rem; font-weight: 500; color: var(--offwhite); margin-bottom: 0.2rem; }
+    .tier-eta { font-family: 'DM Mono', monospace; font-size: 0.65rem; color: var(--muted); margin-bottom: 0.55rem; }
+    .tier-copy { font-size: 0.83rem; color: #72777e; line-height: 1.65; max-width: 460px; }
+    .tier-rate { text-align: right; white-space: nowrap; padding-top: 3px; }
+    .tier-rate a { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.05em; color: var(--orange); text-decoration: none; }
     .tier-rate a:hover { color: var(--copper); }
-
     .callout {
       margin-top: 1rem;
       padding: 1.1rem 1.4rem;
@@ -281,25 +239,11 @@
     .callout a:hover { color: var(--copper); }
 
     /* ── About ── */
-    .about-cols {
-      display: grid;
-      grid-template-columns: 1fr 280px;
-      gap: 3rem;
-      align-items: start;
-    }
-    .about-copy {
-      font-size: 0.875rem;
-      color: #7e838a;
-      line-height: 1.85;
-    }
+    .about-cols { display: grid; grid-template-columns: 1fr 280px; gap: 3rem; align-items: start; }
+    .about-copy { font-size: 0.875rem; color: #7e838a; line-height: 1.85; }
     .about-copy p + p { margin-top: 0.9rem; }
     .about-copy strong { color: var(--offwhite); font-weight: 400; }
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 1.5rem;
-    }
+    .skills { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1.5rem; }
     .skill {
       font-family: 'DM Mono', monospace;
       font-size: 0.6rem;
@@ -309,67 +253,18 @@
       color: var(--graphite);
       background: var(--surface);
     }
-
-    /* Career timeline */
-    .timeline {
-      display: flex;
-      flex-direction: column;
-    }
-    .tl-item {
-      display: grid;
-      grid-template-columns: 10px 1fr;
-      gap: 0.9rem;
-      padding-bottom: 1.25rem;
-      position: relative;
-    }
+    .timeline { display: flex; flex-direction: column; }
+    .tl-item { display: grid; grid-template-columns: 10px 1fr; gap: 0.9rem; padding-bottom: 1.25rem; position: relative; }
     .tl-item:not(:last-child)::before {
-      content: '';
-      position: absolute;
-      left: 4px;
-      top: 8px;
-      bottom: 0;
-      width: 1px;
-      background: var(--border);
+      content: ''; position: absolute; left: 4px; top: 8px; bottom: 0;
+      width: 1px; background: var(--border);
     }
-    .tl-dot {
-      width: 9px;
-      height: 9px;
-      border-radius: 50%;
-      background: var(--orange);
-      flex-shrink: 0;
-      margin-top: 3px;
-    }
-    .tl-co {
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: var(--offwhite);
-      line-height: 1.3;
-    }
-    .tl-role {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.62rem;
-      color: var(--muted);
-      margin-top: 2px;
-    }
-
-    .certs-block {
-      margin-top: 1.75rem;
-      padding-top: 1.5rem;
-      border-top: 1px solid var(--border);
-    }
-    .certs-label {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.6rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--orange);
-      margin-bottom: 0.75rem;
-    }
-    .cert-line {
-      font-size: 0.82rem;
-      color: var(--offwhite);
-      margin-bottom: 0.3rem;
-    }
+    .tl-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--orange); flex-shrink: 0; margin-top: 3px; }
+    .tl-co { font-size: 0.85rem; font-weight: 500; color: var(--offwhite); line-height: 1.3; }
+    .tl-role { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: var(--muted); margin-top: 2px; }
+    .certs-block { margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    .certs-label { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--orange); margin-bottom: 0.75rem; }
+    .cert-line { font-size: 0.82rem; color: var(--offwhite); margin-bottom: 0.3rem; }
     .cert-line span { color: var(--muted); }
 
     /* ── Contact ── */
@@ -380,6 +275,7 @@
       grid-template-columns: 1fr 1fr;
       gap: 2.5rem;
       margin-top: 2rem;
+      align-items: start;
     }
     .contact-block h3 {
       font-family: 'DM Mono', monospace;
@@ -389,37 +285,36 @@
       color: var(--muted);
       margin-bottom: 0.5rem;
     }
-    .contact-block p {
-      font-size: 0.83rem;
-      color: var(--muted);
-      line-height: 1.65;
-      margin-bottom: 0.65rem;
-    }
-    .clink {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.78rem;
-      color: var(--orange);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
+    .contact-block p { font-size: 0.83rem; color: var(--muted); line-height: 1.65; margin-bottom: 0.65rem; }
+    .clink { font-family: 'DM Mono', monospace; font-size: 0.78rem; color: var(--orange); text-decoration: none; }
     .clink:hover { color: var(--copper); }
 
+    /* ── Contact form ── */
+    .contact-form { display: flex; flex-direction: column; gap: 0.75rem; }
+    .contact-form input,
+    .contact-form textarea {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.83rem;
+      font-weight: 300;
+      padding: 0.65rem 0.85rem;
+      width: 100%;
+      outline: none;
+      transition: border-color 0.2s;
+      resize: vertical;
+    }
+    .contact-form input::placeholder,
+    .contact-form textarea::placeholder { color: var(--muted); }
+    .contact-form input:focus,
+    .contact-form textarea:focus { border-color: var(--graphite); }
+    .contact-form textarea { min-height: 110px; }
+
     /* ── Footer ── */
-    footer {
-      background: var(--gunmetal);
-      padding: 1.4rem 0;
-    }
-    footer .container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .fc {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.62rem;
-      color: var(--muted);
-      letter-spacing: 0.05em;
-    }
+    footer { background: var(--gunmetal); padding: 1.4rem 0; }
+    footer .container { display: flex; justify-content: space-between; align-items: center; }
+    .fc { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: var(--muted); letter-spacing: 0.05em; }
 
     /* ── Animations ── */
     @keyframes fadeUp {
@@ -477,9 +372,7 @@
           </div>
         </div>
         <div class="headshot">
-          <!-- Upload headshot.jpg alongside index.html in your GitHub repo -->
-          <img src="headshot.jpg" alt="Shane Jones"
-               onerror="this.parentElement.style.display='none'">
+          <img src="headshot.jpg" alt="Shane Jones" onerror="this.parentElement.style.display='none'">
           <div class="headshot-label">Shane Jones · Ohm Security Advisory</div>
         </div>
       </div>
@@ -492,7 +385,6 @@
           <div class="eyebrow">Services</div>
           <h2>Point-in-time advisory assessments.</h2>
           <p class="lead">Scoped engagements with clear deliverables. Each tier includes everything below it. No retainers, no scanner dumps, no filler.</p>
-
           <div class="tiers">
             <div class="tier">
               <div class="tier-id">T-0</div>
@@ -531,7 +423,6 @@
               <div class="tier-rate"><a href="#contact">Contact for scope →</a></div>
             </div>
           </div>
-
           <div class="callout">
             <strong style="color:var(--offwhite);font-weight:400">Also available:</strong> Full penetration testing (external, internal, web application), wireless security assessments, red team engagements, and social engineering simulations including AI-assisted phishing. <a href="#contact">Reach out to scope.</a>
           </div>
@@ -571,38 +462,23 @@
               <div class="timeline">
                 <div class="tl-item">
                   <div class="tl-dot"></div>
-                  <div>
-                    <div class="tl-co">TrustedSec</div>
-                    <div class="tl-role">Security Consultant II · 2022–2025</div>
-                  </div>
+                  <div><div class="tl-co">TrustedSec</div><div class="tl-role">Security Consultant II · 2022–2025</div></div>
                 </div>
                 <div class="tl-item">
                   <div class="tl-dot"></div>
-                  <div>
-                    <div class="tl-co">BMO Harris</div>
-                    <div class="tl-role">Red Team Consultant · 2020–2022</div>
-                  </div>
+                  <div><div class="tl-co">BMO Harris</div><div class="tl-role">Red Team Consultant · 2020–2022</div></div>
                 </div>
                 <div class="tl-item">
                   <div class="tl-dot"></div>
-                  <div>
-                    <div class="tl-co">Optiv Security</div>
-                    <div class="tl-role">Security Consultant · 2017–2020</div>
-                  </div>
+                  <div><div class="tl-co">Optiv Security</div><div class="tl-role">Security Consultant · 2017–2020</div></div>
                 </div>
                 <div class="tl-item">
                   <div class="tl-dot"></div>
-                  <div>
-                    <div class="tl-co">JPMorgan Chase & Co.</div>
-                    <div class="tl-role">Information Security Analyst · 2015–2017</div>
-                  </div>
+                  <div><div class="tl-co">JPMorgan Chase & Co.</div><div class="tl-role">Information Security Analyst · 2015–2017</div></div>
                 </div>
                 <div class="tl-item">
                   <div class="tl-dot"></div>
-                  <div>
-                    <div class="tl-co">United States Air Force</div>
-                    <div class="tl-role">Security Forces · 2007–2008</div>
-                  </div>
+                  <div><div class="tl-co">United States Air Force</div><div class="tl-role">Security Forces · 2007–2008</div></div>
                 </div>
               </div>
               <div class="certs-block">
@@ -626,19 +502,35 @@
             15 minutes is enough. If I reached out to you, I'll tell you exactly what I found. If you found me — same deal.
           </p>
           <div class="contact-cols">
-            <div class="contact-block">
-              <h3>Email</h3>
-              <p>Fastest way to reach me. Include your domain and a rough scope if you have one.</p>
-              <a href="/cdn-cgi/l/email-protection#9eedf6fff0fbdef1f6f3edfbfdebecf7eae7fffae8f7edf1ece7b0fdf1f3" class="clink"><span class="__cf_email__" data-cfemail="84f7ece5eae1c4ebece9f7e1e7f1f6edf0fde5e0f2edf7ebf6fdaae7ebe9">[email&#160;protected]</span></a>
+
+            <!-- Left: direct links -->
+            <div>
+              <div class="contact-block" style="margin-bottom:1.75rem">
+                <h3>Email</h3>
+                <p>Fastest way to reach me. Include your domain and a rough scope if you have one.</p>
+                <a href="mailto:shane@ohmsecurityadvisory.com" class="clink">shane@ohmsecurityadvisory.com</a>
+              </div>
+              <div class="contact-block">
+                <h3>LinkedIn</h3>
+                <p>Background, publications, and prior work history.</p>
+                <a href="https://www.linkedin.com/in/ohmsecurities/" target="_blank" rel="noopener" class="clink">linkedin.com/in/ohmsecurities</a>
+              </div>
             </div>
-            <div class="contact-block">
-              <h3>LinkedIn</h3>
-              <p>Background, publications, and prior work history.</p>
-              <a href="https://www.linkedin.com/in/ohmsecurities/" target="_blank" rel="noopener" class="clink">linkedin.com/in/ohmsecurities</a>
+
+            <!-- Right: contact form (opens native email client, no backend required) -->
+            <div>
+              <div class="contact-block">
+                <h3>Send a message</h3>
+                <form class="contact-form" id="contact-form">
+                  <input type="text"  id="cf-name"    placeholder="Name"    required>
+                  <input type="email" id="cf-email"   placeholder="Your email" required>
+                  <input type="text"  id="cf-company" placeholder="Company / domain (optional)">
+                  <textarea           id="cf-message" placeholder="What did you find, or what are you looking for?" required></textarea>
+                  <button type="submit" class="btn btn-solid">Send message</button>
+                </form>
+              </div>
             </div>
-          </div>
-          <div style="margin-top:2.25rem">
-            <a href="/cdn-cgi/l/email-protection#4f3c272e212a0f2027223c2a2c3a3d263b362e2b39263c203d36612c2022" class="btn btn-solid">Send a message</a>
+
           </div>
         </div>
       </div>
@@ -652,6 +544,26 @@
       <span class="fc">OSCP · GRTE · Independent</span>
     </div>
   </footer>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var name    = document.getElementById('cf-name').value.trim();
+      var email   = document.getElementById('cf-email').value.trim();
+      var company = document.getElementById('cf-company').value.trim();
+      var message = document.getElementById('cf-message').value.trim();
+
+      var subject = 'Security inquiry' + (company ? ' — ' + company : '');
+      var body    = (name    ? 'Name: '    + name    + '\n' : '')
+                  + (email   ? 'Email: '   + email   + '\n' : '')
+                  + (company ? 'Company: ' + company + '\n' : '')
+                  + '\n' + message;
+
+      window.location.href = 'mailto:shane@ohmsecurityadvisory.com'
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body='    + encodeURIComponent(body);
+    });
+  </script>
 
 </body>
 </html>
