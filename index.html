@@ -423,6 +423,9 @@
               <div class="tier-rate"><a href="#contact">Contact for scope →</a></div>
             </div>
           </div>
+          <div class="callout" style="margin-top:1rem;border-left-color:var(--orange)">
+            <strong style="color:var(--offwhite);font-weight:400">Pricing:</strong> Fixed-fee engagements starting at $2,750. Custom scope-based engagements at $225/hour. <a href="#contact">Reach out to discuss scope.</a>
+          </div>
           <div class="callout">
             <strong style="color:var(--offwhite);font-weight:400">Also available:</strong> Full penetration testing (external, internal, web application), wireless security assessments, red team engagements, and social engineering simulations including AI-assisted phishing. <a href="#contact">Reach out to scope.</a>
           </div>
@@ -439,7 +442,7 @@
             <div>
               <div class="about-copy">
                 <p>I'm <strong>Shane Jones</strong> — an independent offensive security consultant with over a decade running adversary simulation and penetration testing programs at enterprise scale.</p>
-                <p>Most recently at <strong>TrustedSec</strong> as Security Consultant, I served as the internal GCP subject matter expert, built custom enumeration and exploitation frameworks, and led engagements across network, application, cloud, and social engineering disciplines. I've been a guest on the TrustedSec podcast discussing AI-driven offensive techniques.</p>
+                <p>Most recently at <strong>TrustedSec</strong> as Security Consultant II, I served as the internal GCP subject matter expert, built custom enumeration and exploitation frameworks, and led engagements across network, application, cloud, and social engineering disciplines. I've been a guest on the TrustedSec podcast discussing AI-driven offensive techniques.</p>
                 <p>Before that: Red Team Consultant at <strong>BMO Harris</strong>, building and validating red team infrastructure including Proofpoint bypass validation. Security Consultant at <strong>Optiv</strong> for three years. Information Security Analyst at <strong>JPMorgan Chase</strong>, where I earned my OSCP and coordinated a global NAC deployment.</p>
                 <p>I work independently. Direct access, no account managers, and a clear scope from day one.</p>
               </div>
@@ -508,7 +511,7 @@
               <div class="contact-block" style="margin-bottom:1.75rem">
                 <h3>Email</h3>
                 <p>Fastest way to reach me. Include your domain and a rough scope if you have one.</p>
-                <a href="mailto:shane@ohmsecurityadvisory.com" class="clink">shane@ohmsecurityadvisory.com</a>
+                <a href="/cdn-cgi/l/email-protection#37445f56595277585f5a44525442455e434e5653415e4458454e1954585a" class="clink"><span class="__cf_email__" data-cfemail="04776c656a61446b6c6977616771766d707d6560726d776b767d2a676b69">[email&#160;protected]</span></a>
               </div>
               <div class="contact-block">
                 <h3>LinkedIn</h3>
@@ -521,12 +524,14 @@
             <div>
               <div class="contact-block">
                 <h3>Send a message</h3>
+                <p style="margin-bottom:0.9rem">Fill out the form below — it'll open your email client pre-populated. Or just email directly: <a href="mailto:shane@ohmsecurityadvisory.com" class="clink">shane@ohmsecurityadvisory.com</a></p>
                 <form class="contact-form" id="contact-form">
                   <input type="text"  id="cf-name"    placeholder="Name"    required>
                   <input type="email" id="cf-email"   placeholder="Your email" required>
                   <input type="text"  id="cf-company" placeholder="Company / domain (optional)">
                   <textarea           id="cf-message" placeholder="What did you find, or what are you looking for?" required></textarea>
                   <button type="submit" class="btn btn-solid">Send message</button>
+                  <p id="cf-note" style="display:none;font-size:0.75rem;color:var(--muted);line-height:1.6;margin-top:0.25rem">Your email client should open with this pre-filled. If it didn't, email <a href="mailto:shane@ohmsecurityadvisory.com" class="clink">shane@ohmsecurityadvisory.com</a> directly.</p>
                 </form>
               </div>
             </div>
@@ -540,12 +545,12 @@
 
   <footer>
     <div class="container">
-      <span class="fc">© 2025 Ohm Security Advisory · Shane Jones</span>
+      <span class="fc">© 2026 Ohm Security Advisory · Shane Jones</span>
       <span class="fc">OSCP · GRTE · Independent</span>
     </div>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
       var name    = document.getElementById('cf-name').value.trim();
@@ -562,8 +567,9 @@
       window.location.href = 'mailto:shane@ohmsecurityadvisory.com'
         + '?subject=' + encodeURIComponent(subject)
         + '&body='    + encodeURIComponent(body);
+
+      document.getElementById('cf-note').style.display = 'block';
     });
   </script>
-
 </body>
 </html>
