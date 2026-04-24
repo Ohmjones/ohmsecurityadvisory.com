@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ohm Security Advisory — Shane Jones</title>
-  <meta name="description" content="Independent offensive security consulting. Penetration testing, cloud security assessments, and red team engagements. OSCP · GRTE.">
+  <title>Ohm Security Advisory — AI Security &amp; Offensive Security · Shane Jones</title>
+  <meta name="description" content="Independent AI security and offensive security consulting. LLM red-teaming, prompt injection assessments, cloud and identity exposure reviews. OSCP · GRTE · GCP SME.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
@@ -61,7 +61,7 @@
       letter-spacing: 0.1em;
     }
     .logo span { color: var(--orange); }
-    .nav-links { display: flex; gap: 2rem; align-items: center; }
+    .nav-links { display: flex; gap: 1.6rem; align-items: center; }
     .nav-links a {
       font-family: 'DM Mono', monospace;
       font-size: 0.68rem;
@@ -212,7 +212,7 @@
     .tier {
       padding: 1.6rem 1.75rem;
       display: grid;
-      grid-template-columns: 36px 1fr auto;
+      grid-template-columns: 48px 1fr auto;
       gap: 1rem;
       border-bottom: 1px solid var(--border);
       transition: background 0.18s;
@@ -332,7 +332,7 @@
       .headshot         { display: none; }
       .about-cols       { grid-template-columns: 1fr; }
       .contact-cols     { grid-template-columns: 1fr; }
-      .tier             { grid-template-columns: 36px 1fr; }
+      .tier             { grid-template-columns: 48px 1fr; }
       .tier-rate        { grid-column: 2; text-align: left; }
       .nav-links a:not(.nav-cta) { display: none; }
     }
@@ -344,8 +344,8 @@
     <div class="container">
       <a href="/" class="logo">OHM<span>/</span>SECURITY</a>
       <div class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#retainers">Retainers</a>
+        <a href="#ai-security">AI Security</a>
+        <a href="#cloud-security">Cloud Security</a>
         <a href="#about">About</a>
         <a href="#contact" class="nav-cta">Get in touch</a>
       </div>
@@ -357,19 +357,19 @@
     <section class="hero">
       <div class="container">
         <div>
-          <div class="hero-eyebrow">Independent Offensive Security · Est. 2025</div>
+          <div class="hero-eyebrow">Independent AI &amp; Offensive Security</div>
           <h1>Find the exposure<br><em>before they do.</em></h1>
-          <p class="hero-sub">10+ years in adversary simulation, penetration testing, and cloud security. If I reached out, I found something specific on your network — and I know exactly what it means.</p>
+          <p class="hero-sub">10+ years in adversary simulation, penetration testing, and cloud security. Now applied to LLM applications, AI agents, and the cloud infrastructure they run on. If I reached out, I found something specific — and I know what it means.</p>
           <div class="hero-certs">
             <span class="cert cert-main">OSCP</span>
             <span class="cert cert-main">GRTE</span>
-            <span class="cert cert-sec">GCP · AWS · Azure</span>
-            <span class="cert cert-sec">Red Team</span>
-            <span class="cert cert-sec">Pen Test</span>
+            <span class="cert cert-sec">GCP SME</span>
+            <span class="cert cert-sec">LLM Red-Team</span>
+            <span class="cert cert-sec">AWS · Azure</span>
           </div>
           <div class="hero-btns">
             <a href="#contact" class="btn btn-solid">Get in touch</a>
-            <a href="#services" class="btn btn-outline">View services</a>
+            <a href="#ai-security" class="btn btn-outline">View services</a>
           </div>
         </div>
         <div class="headshot">
@@ -379,13 +379,65 @@
       </div>
     </section>
 
-    <!-- Services -->
-    <section class="section" id="services">
+    <!-- AI Security Services -->
+    <section class="section" id="ai-security">
       <div class="section-pad">
         <div class="container">
-          <div class="eyebrow">Services</div>
-          <h2>Point-in-time advisory assessments.</h2>
-          <p class="lead">Scoped engagements with clear deliverables. Each tier includes everything below it. No scanner dumps, no filler.</p>
+          <div class="eyebrow">AI Security</div>
+          <h2>Adversarial testing for LLM applications and AI products.</h2>
+          <p class="lead">For teams shipping customer-facing AI, preparing for enterprise security reviews, or putting agents into production. Methodology built on promptfoo, Garak, and manual operator testing. Findings mapped to OWASP LLM Top 10.</p>
+          <div class="tiers">
+            <div class="tier">
+              <div class="tier-id">AI&#8209;T0</div>
+              <div>
+                <div class="tier-name">AI Exposure Recon</div>
+                <div class="tier-eta">2–3 business days</div>
+                <div class="tier-copy">Public-facing AI surface check. Exposed model endpoints (Ollama, vLLM, LangServe), unprotected vector databases, leaked LLM provider keys, Gradio and Streamlit deployments without auth. Snapshot report with each finding mapped to remediation.</div>
+              </div>
+              <div class="tier-rate"><a href="#contact">Contact for scope →</a></div>
+            </div>
+            <div class="tier">
+              <div class="tier-id">AI&#8209;T1</div>
+              <div>
+                <div class="tier-name">LLM Red-Team Assessment</div>
+                <div class="tier-eta">2 weeks</div>
+                <div class="tier-copy">Adversarial testing against a target LLM application. Prompt injection, jailbreak resistance, system prompt extraction, output handling abuse, and RAG poisoning where applicable. Combines promptfoo, Garak, and manual operator testing. Full report with reproduction steps and severity ranking.</div>
+              </div>
+              <div class="tier-rate"><a href="#contact">Contact for scope →</a></div>
+            </div>
+            <div class="tier">
+              <div class="tier-id">AI&#8209;T2</div>
+              <div>
+                <div class="tier-name">AI Security Audit</div>
+                <div class="tier-eta">3–4 weeks</div>
+                <div class="tier-copy">Architecture-level review of an AI product or feature. Data flow, prompt construction, tool and function-call boundaries, agent abuse paths, RAG retrieval handling, output sanitization, and IAM around model serving. Includes AI-T1 testing of the live endpoint.</div>
+              </div>
+              <div class="tier-rate"><a href="#contact">Contact for scope →</a></div>
+            </div>
+            <div class="tier">
+              <div class="tier-id">AI&#8209;T3</div>
+              <div>
+                <div class="tier-name">GCP + AI Workload Security Review</div>
+                <div class="tier-eta">2–3 weeks</div>
+                <div class="tier-copy">Combined cloud and AI focus. Vertex AI deployments, model-serving IAM, training-data exposure, pipeline security, service account scope, and audit-log gaps. Built for teams running AI workloads on GCP.</div>
+              </div>
+              <div class="tier-rate"><a href="#contact">Contact for scope →</a></div>
+            </div>
+          </div>
+          <div class="callout" style="margin-top:1rem;border-left-color:var(--orange)">
+            <strong style="color:var(--offwhite);font-weight:400">Pricing:</strong> Fixed-fee AI security engagements, $8k–25k depending on scope. <a href="#contact">Reach out to discuss.</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cloud & Identity Services -->
+    <section class="section" id="cloud-security">
+      <div class="section-pad">
+        <div class="container">
+          <div class="eyebrow">Cloud &amp; Identity</div>
+          <h2>Point-in-time exposure assessments.</h2>
+          <p class="lead">Scoped engagements with clear deliverables. Each tier includes everything below it. No retainers, no scanner dumps, no filler.</p>
           <div class="tiers">
             <div class="tier">
               <div class="tier-id">T-0</div>
@@ -434,49 +486,6 @@
       </div>
     </section>
 
-    <!-- Retainers -->
-    <section class="section" id="retainers">
-      <div class="section-pad">
-        <div class="container">
-          <div class="eyebrow">Retainers</div>
-          <h2>Ongoing security, not one-off snapshots.</h2>
-          <p class="lead">Point-in-time assessments find what's exposed today. Retainers keep you ahead of what changes tomorrow. All retainers include direct access — no account managers, no handoffs.</p>
-          <div class="tiers">
-            <div class="tier">
-              <div class="tier-id">R-1</div>
-              <div>
-                <div class="tier-name">Monthly Advisory</div>
-                <div class="tier-eta">Ongoing · month-to-month</div>
-                <div class="tier-copy">Dedicated hours each month for exposure monitoring, ad-hoc advisory, architecture review, and prioritized response to emerging threats. Flexible scope — scales with what you actually need. Best for organizations without an internal security function.</div>
-              </div>
-              <div class="tier-rate"><a href="#contact">Contact for scope →</a></div>
-            </div>
-            <div class="tier">
-              <div class="tier-id">R-2</div>
-              <div>
-                <div class="tier-name">Quarterly Assessment</div>
-                <div class="tier-eta">Scheduled · 4x per year</div>
-                <div class="tier-copy">Structured external assessments on a fixed cadence. Same methodology each cycle — tracks exposure drift, validates remediation, and produces period-over-period comparisons. Designed for compliance-driven environments and organizations that need regular testing on a predictable budget.</div>
-              </div>
-              <div class="tier-rate"><a href="#contact">Contact for scope →</a></div>
-            </div>
-            <div class="tier">
-              <div class="tier-id">R-3</div>
-              <div>
-                <div class="tier-name">On-Call Advisory</div>
-                <div class="tier-eta">Ongoing · priority access</div>
-                <div class="tier-copy">Senior offensive security expertise on standby. Monthly availability fee covers rapid assessment requests, vendor security reviews, architecture questions, and advisory calls. Lower hour commitment — high-value access when you need it without the overhead of a full engagement.</div>
-              </div>
-              <div class="tier-rate"><a href="#contact">Contact for scope →</a></div>
-            </div>
-          </div>
-          <div class="callout" style="margin-top:1rem;border-left-color:var(--orange)">
-            <strong style="color:var(--offwhite);font-weight:400">Retainer pricing</strong> starts at $2,500/month. Scope, hours, and cadence are defined upfront — no surprises on the invoice. <a href="#contact">Reach out to discuss what makes sense for your environment.</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- About -->
     <section class="section" id="about">
       <div class="section-pad">
@@ -485,13 +494,22 @@
           <div class="about-cols">
             <div>
               <div class="about-copy">
-                <p>I'm <strong>Shane Jones</strong> — an independent offensive security consultant with over a decade running adversary simulation and penetration testing programs at enterprise scale.</p>
-                <p>Most recently at <strong>TrustedSec</strong> as Security Consultant II, I served as the internal GCP subject matter expert, built custom enumeration and exploitation frameworks, and led engagements across network, application, cloud, and social engineering disciplines. I've been a guest on the TrustedSec podcast discussing AI-driven offensive techniques.</p>
-                <p>Before that: Red Team Consultant at <strong>BMO Harris</strong>, building and validating red team infrastructure including Proofpoint bypass validation. Security Consultant at <strong>Optiv</strong> for three years. Information Security Analyst at <strong>JPMorgan Chase</strong>, where I earned my OSCP and coordinated a global NAC deployment.</p>
-                <p>I work independently. Direct access, no account managers, and a clear scope from day one.</p>
+                <p>I'm <strong>Shane Jones</strong> — independent offensive security consultant with over a decade running adversary simulation and penetration testing programs at enterprise scale. Roughly 160 client organizations across finance, healthcare, energy, and technology.</p>
+                <p>Most recently at <strong>TrustedSec</strong> as Security Consultant II, I served as the internal GCP subject matter expert, built custom enumeration and exploitation frameworks, and led engagements across network, application, cloud, and social engineering disciplines. I've also been a guest on the TrustedSec podcast discussing AI in offensive security work.</p>
+                <p>The AI security practice grew out of that work. Adversarial testing of LLM applications uses the same operator mindset as red team engagements — assume the constraints are wrong, look for the gap between policy and implementation, find what produces leverage. I run engagements using <strong>promptfoo</strong>, <strong>Garak</strong>, and manual prompt-engineering against live endpoints.</p>
+                <p>Before TrustedSec: Red Team Consultant at <strong>BMO Harris</strong>, Security Consultant at <strong>Optiv</strong> for three years, and Information Security Analyst at <strong>JPMorgan Chase</strong> where I earned my OSCP and coordinated a global NAC deployment.</p>
+                <p>I work independently. Direct access, no account managers, clear scope from day one.</p>
               </div>
               <div class="skills">
+                <span class="skill">LLM Red-Team</span>
+                <span class="skill">Prompt Injection</span>
+                <span class="skill">promptfoo</span>
+                <span class="skill">Garak</span>
+                <span class="skill">OWASP LLM Top 10</span>
+                <span class="skill">RAG Security</span>
+                <span class="skill">Agent Abuse</span>
                 <span class="skill">GCP Red Team</span>
+                <span class="skill">Vertex AI</span>
                 <span class="skill">AWS</span>
                 <span class="skill">Azure / Entra</span>
                 <span class="skill">Golang</span>
@@ -499,14 +517,17 @@
                 <span class="skill">Bash</span>
                 <span class="skill">Terraform</span>
                 <span class="skill">Ansible</span>
-                <span class="skill">MITRE ATT&CK</span>
+                <span class="skill">MITRE ATT&amp;CK</span>
                 <span class="skill">D3FEND</span>
-                <span class="skill">Social Engineering</span>
                 <span class="skill">AI-Assisted Phishing</span>
               </div>
             </div>
             <div>
               <div class="timeline">
+                <div class="tl-item">
+                  <div class="tl-dot"></div>
+                  <div><div class="tl-co">Ohm Security Advisory</div><div class="tl-role">Principal Consultant · 2025–Present</div></div>
+                </div>
                 <div class="tl-item">
                   <div class="tl-dot"></div>
                   <div><div class="tl-co">TrustedSec</div><div class="tl-role">Security Consultant II · 2022–2025</div></div>
@@ -521,7 +542,7 @@
                 </div>
                 <div class="tl-item">
                   <div class="tl-dot"></div>
-                  <div><div class="tl-co">JPMorgan Chase & Co.</div><div class="tl-role">Information Security Analyst · 2015–2017</div></div>
+                  <div><div class="tl-co">JPMorgan Chase &amp; Co.</div><div class="tl-role">Information Security Analyst · 2015–2017</div></div>
                 </div>
                 <div class="tl-item">
                   <div class="tl-dot"></div>
@@ -555,7 +576,7 @@
               <div class="contact-block" style="margin-bottom:1.75rem">
                 <h3>Email</h3>
                 <p>Fastest way to reach me. Include your domain and a rough scope if you have one.</p>
-                <a href="/cdn-cgi/l/email-protection#37445f56595277585f5a44525442455e434e5653415e4458454e1954585a" class="clink"><span class="__cf_email__" data-cfemail="04776c656a61446b6c6977616771766d707d6560726d776b767d2a676b69">[email&#160;protected]</span></a>
+                <a href="mailto:shane@ohmsecurityadvisory.com" class="clink">shane@ohmsecurityadvisory.com</a>
               </div>
               <div class="contact-block">
                 <h3>LinkedIn</h3>
@@ -590,11 +611,11 @@
   <footer>
     <div class="container">
       <span class="fc">© 2026 Ohm Security Advisory · Shane Jones</span>
-      <span class="fc">OSCP · GRTE · Independent</span>
+      <span class="fc">OSCP · GRTE · GCP SME · Independent</span>
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+  <script>
     document.getElementById('contact-form').addEventListener('submit', function(e) {
       e.preventDefault();
       var name    = document.getElementById('cf-name').value.trim();
