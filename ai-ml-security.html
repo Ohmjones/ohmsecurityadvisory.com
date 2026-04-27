@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI/ML Security — Ohm Security Advisory</title>
+  <meta name="description" content="Adversarial testing for LLM applications and AI products. Prompt injection, jailbreak resistance, RAG poisoning, agent abuse. promptfoo, Garak, manual operator testing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container-wide">
+      <a href="index.html" class="logo">OHM<span>/</span>SECURITY</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <div class="nav-links" id="primary-nav">
+        <a href="about.html">About</a>
+        <a href="cloud-security.html">Cloud Security</a>
+        <a href="ai-ml-security.html" class="active">AI/ML Security</a>
+        <a href="secure-development.html">Secure Development</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html" class="nav-cta">Get in touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <header class="page-header">
+      <div class="container">
+        <div class="eyebrow">AI/ML Security</div>
+        <h1>Adversarial testing for LLM applications and AI products.</h1>
+        <p>For teams shipping customer-facing AI, preparing for enterprise security reviews, or putting agents into production. Methodology built on promptfoo, Garak, and manual operator testing. Findings mapped to OWASP LLM Top 10.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="section-pad">
+        <div class="container">
+          <div class="tiers">
+            <div class="tier">
+              <div class="tier-id">AI&#8209;T0</div>
+              <div>
+                <div class="tier-name">AI Exposure Recon</div>
+                <div class="tier-eta">2–3 business days</div>
+                <div class="tier-copy">Public-facing AI surface check. Exposed model endpoints (Ollama, vLLM, LangServe), unprotected vector databases, leaked LLM provider keys, Gradio and Streamlit deployments without auth. Snapshot report with each finding mapped to remediation.</div>
+              </div>
+              <div class="tier-rate"><a href="contact.html">Contact for scope →</a></div>
+            </div>
+            <div class="tier">
+              <div class="tier-id">AI&#8209;T1</div>
+              <div>
+                <div class="tier-name">LLM Red-Team Assessment</div>
+                <div class="tier-eta">2 weeks</div>
+                <div class="tier-copy">Adversarial testing against a target LLM application. Prompt injection, jailbreak resistance, system prompt extraction, output handling abuse, and RAG poisoning where applicable. Combines promptfoo, Garak, and manual operator testing. Full report with reproduction steps and severity ranking.</div>
+              </div>
+              <div class="tier-rate"><a href="contact.html">Contact for scope →</a></div>
+            </div>
+            <div class="tier">
+              <div class="tier-id">AI&#8209;T2</div>
+              <div>
+                <div class="tier-name">AI Security Audit</div>
+                <div class="tier-eta">3–4 weeks</div>
+                <div class="tier-copy">Architecture-level review of an AI product or feature. Data flow, prompt construction, tool and function-call boundaries, agent abuse paths, RAG retrieval handling, output sanitization, and IAM around model serving. Includes AI-T1 testing of the live endpoint.</div>
+              </div>
+              <div class="tier-rate"><a href="contact.html">Contact for scope →</a></div>
+            </div>
+            <div class="tier">
+              <div class="tier-id">AI&#8209;T3</div>
+              <div>
+                <div class="tier-name">GCP + AI Workload Security Review</div>
+                <div class="tier-eta">2–3 weeks</div>
+                <div class="tier-copy">Combined cloud and AI focus. Vertex AI deployments, model-serving IAM, training-data exposure, pipeline security, service account scope, and audit-log gaps. Built for teams running AI workloads on GCP.</div>
+              </div>
+              <div class="tier-rate"><a href="contact.html">Contact for scope →</a></div>
+            </div>
+          </div>
+          <div class="callout" style="border-left-color:var(--orange)">
+            <strong>Pricing:</strong> Fixed-fee AI security engagements, $8k–25k depending on scope. <a href="contact.html">Reach out to discuss.</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-section">
+      <div class="contact-pad">
+        <div class="container">
+          <div class="eyebrow">Contact</div>
+          <h2>Test your AI before someone else does.</h2>
+          <p style="font-size:0.875rem;color:var(--muted);max-width:420px;line-height:1.75;margin-bottom:1.5rem">
+            Tell me what you've shipped, what you're about to ship, or what you're worried about. 15 minutes is enough to figure out if there's an engagement here.
+          </p>
+          <a href="contact.html" class="btn btn-solid">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container-wide">
+      <span class="fc">© 2026 Ohm Security Advisory · Shane Jones</span>
+      <span class="fc">OSCP · GRTE · GCP SME · Independent</span>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Ohm Security Advisory</title>
+  <meta name="description" content="Get in touch with Shane Jones at Ohm Security Advisory. Email, LinkedIn, or contact form.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container-wide">
+      <a href="index.html" class="logo">OHM<span>/</span>SECURITY</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <div class="nav-links" id="primary-nav">
+        <a href="about.html">About</a>
+        <a href="cloud-security.html">Cloud Security</a>
+        <a href="ai-ml-security.html">AI/ML Security</a>
+        <a href="secure-development.html">Secure Development</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html" class="nav-cta active">Get in touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <header class="page-header">
+      <div class="container">
+        <div class="eyebrow">Contact</div>
+        <h1>Let's talk.</h1>
+        <p>15 minutes is enough. If I reached out to you, I'll tell you exactly what I found. If you found me — same deal.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="section-pad">
+        <div class="container">
+          <div class="contact-cols">
+
+            <!-- Left: direct links -->
+            <div>
+              <div class="contact-block" style="margin-bottom:1.75rem">
+                <h3>Email</h3>
+                <p>Fastest way to reach me. Include your domain and a rough scope if you have one.</p>
+                <a href="mailto:shane@ohmsecurityadvisory.com" class="clink">shane@ohmsecurityadvisory.com</a>
+              </div>
+              <div class="contact-block" style="margin-bottom:1.75rem">
+                <h3>LinkedIn</h3>
+                <p>Background, publications, and prior work history.</p>
+                <a href="https://www.linkedin.com/in/ohmsecurities/" target="_blank" rel="noopener" class="clink">linkedin.com/in/ohmsecurities</a>
+              </div>
+              <div class="contact-block">
+                <h3>What to include</h3>
+                <p>Domain or system you want looked at, rough scope or use case, and what's driving the timing — pre-launch, security review, audit prep, or just curiosity. The more specific, the faster I can tell you whether there's a real engagement here.</p>
+              </div>
+            </div>
+
+            <!-- Right: contact form -->
+            <div>
+              <div class="contact-block">
+                <h3>Send a message</h3>
+                <p style="margin-bottom:0.9rem">Fill out the form below — it'll open your email client pre-populated. Or just email directly: <a href="mailto:shane@ohmsecurityadvisory.com" class="clink">shane@ohmsecurityadvisory.com</a></p>
+                <form class="contact-form" id="contact-form">
+                  <input type="text"  id="cf-name"    placeholder="Name"    required>
+                  <input type="email" id="cf-email"   placeholder="Your email" required>
+                  <input type="text"  id="cf-company" placeholder="Company / domain (optional)">
+                  <textarea           id="cf-message" placeholder="What did you find, or what are you looking for?" required></textarea>
+                  <button type="submit" class="btn btn-solid">Send message</button>
+                  <p id="cf-note" style="display:none;font-size:0.75rem;color:var(--muted);line-height:1.6;margin-top:0.25rem">Your email client should open with this pre-filled. If it didn't, email <a href="mailto:shane@ohmsecurityadvisory.com" class="clink">shane@ohmsecurityadvisory.com</a> directly.</p>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container-wide">
+      <span class="fc">© 2026 Ohm Security Advisory · Shane Jones</span>
+      <span class="fc">OSCP · GRTE · GCP SME · Independent</span>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var name    = document.getElementById('cf-name').value.trim();
+      var email   = document.getElementById('cf-email').value.trim();
+      var company = document.getElementById('cf-company').value.trim();
+      var message = document.getElementById('cf-message').value.trim();
+
+      var subject = 'Security inquiry' + (company ? ' — ' + company : '');
+      var body    = (name    ? 'Name: '    + name    + '\n' : '')
+                  + (email   ? 'Email: '   + email   + '\n' : '')
+                  + (company ? 'Company: ' + company + '\n' : '')
+                  + '\n' + message;
+
+      window.location.href = 'mailto:shane@ohmsecurityadvisory.com'
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body='    + encodeURIComponent(body);
+
+      document.getElementById('cf-note').style.display = 'block';
+    });
+  </script>
+</body>
+</html>

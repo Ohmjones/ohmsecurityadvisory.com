@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials — Ohm Security Advisory</title>
+  <meta name="description" content="Client testimonials from offensive security, AI/ML security, and secure development engagements.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container-wide">
+      <a href="index.html" class="logo">OHM<span>/</span>SECURITY</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <div class="nav-links" id="primary-nav">
+        <a href="about.html">About</a>
+        <a href="cloud-security.html">Cloud Security</a>
+        <a href="ai-ml-security.html">AI/ML Security</a>
+        <a href="secure-development.html">Secure Development</a>
+        <a href="testimonials.html" class="active">Testimonials</a>
+        <a href="contact.html" class="nav-cta">Get in touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <header class="page-header">
+      <div class="container">
+        <div class="eyebrow">Testimonials</div>
+        <h1>What clients say.</h1>
+        <p>Direct testimonials from engagements, gathered with client consent. Some attributions are anonymized at the client's request — engagement type and industry are noted in those cases.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="section-pad">
+        <div class="container">
+
+          <!--
+            ════════════════════════════════════════════════════════════════
+            HOW TO ADD A NEW TESTIMONIAL
+
+            Copy the block below this comment, paste it inside
+            <div class="testimonial-grid"> and fill it in.
+
+            Anonymized version: replace name with "Director of Security" or similar,
+            put industry/company size in testimonial-role.
+
+            <div class="testimonial">
+              <div class="testimonial-quote">Their quote here, kept verbatim where possible.</div>
+              <div class="testimonial-attribution">
+                <div>
+                  <div class="testimonial-name">First Last</div>
+                  <div class="testimonial-role">Title · Company</div>
+                </div>
+                <div class="testimonial-engagement">Engagement Type</div>
+              </div>
+            </div>
+
+            Engagement Type values to keep consistent:
+              · Cloud Security
+              · AI/ML Security
+              · Secure Development
+              · Red Team
+              · Pen Test
+            ════════════════════════════════════════════════════════════════
+          -->
+
+          <div class="testimonial-grid">
+
+            <!-- Empty state shown until real testimonials are added.
+                 Delete this block once you have at least one real testimonial. -->
+            <div class="testimonial-empty">
+              <p><strong style="color:var(--offwhite);font-weight:400">Testimonials are being collected.</strong></p>
+              <p>If you've worked with Ohm Security Advisory and would be willing to share a few words about the engagement, please <a href="contact.html" style="color:var(--orange);text-decoration:none">reach out</a>. Anonymized attributions are welcome.</p>
+            </div>
+
+            <!-- ──────────────────────────────────────────────
+                 PLACEHOLDER (delete or replace with real ones)
+                 ────────────────────────────────────────────── -->
+            <!--
+            <div class="testimonial">
+              <div class="testimonial-quote">Shane found a privilege escalation path our cloud team had missed for two years. Direct, written up clearly, with reproduction steps. We had it patched within a week.</div>
+              <div class="testimonial-attribution">
+                <div>
+                  <div class="testimonial-name">Director of Security</div>
+                  <div class="testimonial-role">Healthcare SaaS · Series C</div>
+                </div>
+                <div class="testimonial-engagement">Cloud Security</div>
+              </div>
+            </div>
+            -->
+
+          </div>
+
+          <div class="callout" style="margin-top:2rem">
+            <strong>For past clients:</strong> If we worked together at TrustedSec, BMO Harris, Optiv, or JPMorgan Chase and you'd be willing to share a quote about the engagement, I'd genuinely appreciate it. <a href="contact.html">Get in touch</a> and I'll send a short form. Anonymized references are welcome — just title, industry, and company size.
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-section">
+      <div class="contact-pad">
+        <div class="container">
+          <div class="eyebrow">Contact</div>
+          <h2>References available on request.</h2>
+          <p style="font-size:0.875rem;color:var(--muted);max-width:420px;line-height:1.75;margin-bottom:1.5rem">
+            For prospective engagements, direct references from prior clients are available under NDA. Reach out and I'll connect you with people who can speak to the work.
+          </p>
+          <a href="contact.html" class="btn btn-solid">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container-wide">
+      <span class="fc">© 2026 Ohm Security Advisory · Shane Jones</span>
+      <span class="fc">OSCP · GRTE · GCP SME · Independent</span>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>

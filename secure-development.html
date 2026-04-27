@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Development — Ohm Security Advisory</title>
+  <meta name="description" content="Architecture, build, and review for backends, ML/AI integrations, and sensor/IoT data systems. Security baked in from day one. Python, Go, GCP, AWS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container-wide">
+      <a href="index.html" class="logo">OHM<span>/</span>SECURITY</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <div class="nav-links" id="primary-nav">
+        <a href="about.html">About</a>
+        <a href="cloud-security.html">Cloud Security</a>
+        <a href="ai-ml-security.html">AI/ML Security</a>
+        <a href="secure-development.html" class="active">Secure Development</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html" class="nav-cta">Get in touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <header class="page-header">
+      <div class="container">
+        <div class="eyebrow">Secure Development</div>
+        <h1>Architecture, build, and review &mdash; with security baked in.</h1>
+        <p>For teams shipping new products without a security engineer on staff. 17+ years of professional software development paired with a decade of offensive security work. The same operator mindset that finds the gaps in someone else's system, applied to building yours so the gaps aren't there in the first place.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="section-pad">
+        <div class="container">
+          <div class="eyebrow">Offerings</div>
+          <h2>Phased engagements. Clear deliverables.</h2>
+          <p class="lead">Most builds start with discovery, then a build phase, then review. Each phase is its own SOW — you commit one phase at a time, with a real number for the next phase before you sign it.</p>
+
+          <div class="tiers">
+
+            <div class="tier">
+              <div class="tier-id">SD&#8209;T0</div>
+              <div>
+                <div class="tier-name">Discovery &amp; Architecture</div>
+                <div class="tier-eta">1–2 weeks</div>
+                <div class="tier-copy">Define what you're actually building. Requirements gathering, system architecture, technology selection, threat model, build estimate. Deliverable is a written architecture brief and a phased build proposal with order-of-magnitude pricing. The brief is yours regardless of whether you continue with me for the build.</div>
+              </div>
+              <div class="tier-rate"><a href="contact.html">Contact for scope →</a></div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">SD&#8209;T1</div>
+              <div>
+                <div class="tier-name">Secure Backend &amp; API Build</div>
+                <div class="tier-eta">2–6 weeks per phase</div>
+                <div class="tier-copy">Build a defined backend service, API, or data pipeline. Python or Go. Authentication, authorization, secrets management, logging, and input handling are part of the design from day one — not a security review at the end. Deployment to GCP or AWS with infrastructure-as-code. Phased delivery with not-to-exceed caps per phase.</div>
+              </div>
+              <div class="tier-rate"><a href="contact.html">Contact for scope →</a></div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">SD&#8209;T2</div>
+              <div>
+                <div class="tier-name">ML/AI Integration</div>
+                <div class="tier-eta">3–6 weeks</div>
+                <div class="tier-copy">Add ML or AI capability to an existing product. Includes use-case definition (model training vs. off-the-shelf inference vs. LLM-assisted vs. heuristics), evaluation methodology, and security review of the data path and model boundaries. Avoids ML where a rule-based approach works better. For teams who need someone honest about whether AI is the right answer.</div>
+              </div>
+              <div class="tier-rate"><a href="contact.html">Contact for scope →</a></div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">SD&#8209;T3</div>
+              <div>
+                <div class="tier-name">Sensor &amp; Data Aggregation Systems</div>
+                <div class="tier-eta">4–8 weeks per phase</div>
+                <div class="tier-copy">End-to-end data systems for industrial, OT, or product telemetry. Sensor inventory and transport (MQTT, gRPC, OPC-UA), ingestion, time-series storage, downstream ML or analytics, and security architecture across the full path. Built for teams running sensor or IoT workloads who need the system to be both functional and not be the breach vector.</div>
+              </div>
+              <div class="tier-rate"><a href="contact.html">Contact for scope →</a></div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">SD&#8209;T4</div>
+              <div>
+                <div class="tier-name">Code &amp; Architecture Review</div>
+                <div class="tier-eta">1–3 weeks</div>
+                <div class="tier-copy">Review of an existing codebase or system. Threat model, security findings, dependency and supply-chain analysis, and remediation guidance with priority ranking. Useful before launch, before an enterprise security review, or when something feels off and you want a second set of eyes. Read-only — no changes to your code.</div>
+              </div>
+              <div class="tier-rate"><a href="contact.html">Contact for scope →</a></div>
+            </div>
+
+          </div>
+
+          <div class="callout" style="border-left-color:var(--orange)">
+            <strong>Pricing:</strong> Discovery starts at $5,000 fixed-fee for a one-week engagement. Build phases scoped per-SOW after discovery. Review work fixed-fee or hourly depending on size. <a href="contact.html">Reach out to discuss scope.</a>
+          </div>
+
+          <div class="callout">
+            <strong>How this differs from a typical dev shop:</strong> Every engagement includes a written threat model and security architecture as part of the deliverable, not as a separate add-on. The same person who tests your system after it's built is the one designing it. <a href="ai-ml-security.html">AI/ML Security</a> and <a href="cloud-security.html">Cloud Security</a> work pair naturally with build engagements.
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack section -->
+    <section class="section">
+      <div class="section-pad">
+        <div class="container">
+          <div class="eyebrow">Stack</div>
+          <h2>What I build with.</h2>
+          <p class="lead">I default to boring, well-understood technology. Bespoke choices come from genuine fit, not novelty.</p>
+          <div class="skills" style="margin-top:0.5rem">
+            <span class="skill">Python</span>
+            <span class="skill">Go</span>
+            <span class="skill">FastAPI</span>
+            <span class="skill">Flask</span>
+            <span class="skill">SQLite</span>
+            <span class="skill">PostgreSQL</span>
+            <span class="skill">Redis</span>
+            <span class="skill">MQTT</span>
+            <span class="skill">gRPC</span>
+            <span class="skill">GCP</span>
+            <span class="skill">AWS</span>
+            <span class="skill">Terraform</span>
+            <span class="skill">Ansible</span>
+            <span class="skill">Docker</span>
+            <span class="skill">GitHub Actions</span>
+            <span class="skill">Vertex AI</span>
+            <span class="skill">OpenAI / Anthropic APIs</span>
+            <span class="skill">promptfoo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-section">
+      <div class="contact-pad">
+        <div class="container">
+          <div class="eyebrow">Contact</div>
+          <h2>Build it right the first time.</h2>
+          <p style="font-size:0.875rem;color:var(--muted);max-width:420px;line-height:1.75;margin-bottom:1.5rem">
+            Most projects start with a one-week discovery so we both know what we're committing to before any code gets written. Tell me what you have in mind.
+          </p>
+          <a href="contact.html" class="btn btn-solid">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container-wide">
+      <span class="fc">© 2026 Ohm Security Advisory · Shane Jones</span>
+      <span class="fc">OSCP · GRTE · GCP SME · Independent</span>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
