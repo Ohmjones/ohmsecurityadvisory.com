@@ -1,4 +1,4 @@
-// Mobile nav toggle. Same script lives on every page.
+// Mobile nav toggle.
 (function () {
   var btn = document.querySelector('.nav-toggle');
   var menu = document.querySelector('.nav-links');
