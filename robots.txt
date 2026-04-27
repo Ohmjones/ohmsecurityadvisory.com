@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block low-value paths from being indexed
+Disallow: /404.html
+
+# Sitemap
+Sitemap: https://ohmsecurityadvisory.com/sitemap.xml
