@@ -1,0 +1,7 @@
+# Vulnerability disclosure — Ohm Security Advisory
+# Thanks for taking the time to report. Specifics below.
+ 
+Contact: mailto:shane@ohmsecurityadvisory.com
+Expires: 2027-04-27T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://ohmsecurityadvisory.com/.well-known/security.txt
