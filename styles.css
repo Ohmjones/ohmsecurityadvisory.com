@@ -258,7 +258,7 @@ h2 {
 /* ── Service overview grid (home page) ── */
 .service-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.25rem;
   margin-top: 1rem;
 }
@@ -539,12 +539,15 @@ footer .container-wide { display: flex; justify-content: space-between; align-it
   .nav-cta { text-align: center; }
 }
 
+@media (max-width: 760px) {
+  .service-grid { grid-template-columns: 1fr; }
+}
+
 @media (max-width: 660px) {
   .hero .container  { grid-template-columns: 1fr; }
   .headshot         { display: none; }
   .about-cols       { grid-template-columns: 1fr; }
   .contact-cols     { grid-template-columns: 1fr; }
-  .service-grid     { grid-template-columns: 1fr; }
   .tier             { grid-template-columns: 60px 1fr; }
   .tier-rate        { grid-column: 2; text-align: left; }
   .testimonial-attribution { grid-template-columns: 1fr; }
