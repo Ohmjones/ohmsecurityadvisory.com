@@ -88,13 +88,15 @@ nav .container-wide { display: flex; align-items: center; justify-content: space
 .nav-cta.active { border-bottom: 1px solid var(--orange); padding-bottom: 0.4rem; }
 
 /* ── Dropdown ── */
-.nav-dropdown { position: relative; }
+.nav-dropdown { position: relative; display: flex; align-items: center; }
 .nav-dropdown-trigger {
   background: transparent;
   border: none;
   padding: 0;
+  margin: 0;
   font-family: 'DM Mono', monospace;
   font-size: 0.66rem;
+  line-height: 1;
   color: var(--muted);
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -103,6 +105,8 @@ nav .container-wide { display: flex; align-items: center; justify-content: space
   align-items: center;
   gap: 0.4rem;
   transition: color 0.2s;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .nav-dropdown-trigger:hover,
 .nav-dropdown-trigger[aria-expanded="true"] { color: var(--offwhite); }

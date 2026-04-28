@@ -1,5 +1,11 @@
-// Nav interactions: mobile menu toggle + services dropdown
+// Nav interactions: mobile menu toggle + services dropdown + copyright year
 (function () {
+  // Copyright year — runs first, no DOM dependencies beyond the span existing
+  var year = new Date().getFullYear();
+  document.querySelectorAll('.copyright-year').forEach(function (el) {
+    el.textContent = year;
+  });
+
   // Mobile menu
   var btn = document.querySelector('.nav-toggle');
   var menu = document.querySelector('.nav-links');
