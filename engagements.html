@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e2124">
+  <meta name="author" content="Shane Jones">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <title>Engagement Highlights — Sanitized Case Studies | Ohm Security Advisory</title>
+  <meta name="description" content="Sanitized writeups of red team, social engineering, and AD exploitation work I've done over the past decade.">
+
+  <link rel="canonical" href="https://ohmsecurityadvisory.com/engagements.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ohm Security Advisory">
+  <meta property="og:title" content="Engagement Highlights — Sanitized Case Studies">
+  <meta property="og:description" content="Red team, social engineering, AI-assisted phishing, AD exploitation. Sanitized writeups of past work.">
+  <meta property="og:url" content="https://ohmsecurityadvisory.com/engagements.html">
+  <meta property="og:image" content="https://ohmsecurityadvisory.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Engagement Highlights — Ohm Security Advisory">
+  <meta name="twitter:description" content="Sanitized case studies from red team and social engineering engagements.">
+  <meta name="twitter:image" content="https://ohmsecurityadvisory.com/og-image.png">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container-wide">
+      <a href="index.html" class="logo">OHM<span>/</span>SECURITY</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <div class="nav-links" id="primary-nav">
+        <a href="about.html">About</a>
+        <a href="cloud-security.html">Cloud Security</a>
+        <a href="ai-ml-security.html">AI/ML Security</a>
+        <a href="secure-development.html">Secure Development</a>
+        <a href="engagements.html" class="active">Engagements</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html" class="nav-cta">Get in touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <header class="page-header">
+      <div class="container">
+        <div class="eyebrow">Engagement Highlights</div>
+        <h1>The work, sanitized.</h1>
+        <p>A decade of red team, social engineering, and AD exploitation across Fortune 500s, multinational banks, and Big Four-tier consultancies. Client names are out for confidentiality. The techniques and outcomes are real, and the kind of result you can expect when you bring me in.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="section-pad">
+        <div class="container">
+
+          <div class="tiers">
+
+            <div class="tier">
+              <div class="tier-id">01</div>
+              <div>
+                <div class="tier-name">AI Voice-Cloned Vishing — Fortune 500 Organization</div>
+                <div class="tier-eta">AI-Assisted Phishing · TrustedSec</div>
+                <div class="tier-copy">Cloned the client's CIO's voice and called their help desk. The agent ran zero identity verification and emailed network domain admin credentials to a non-client address. The engagement worked so well that I built the AI-assisted social engineering methodology and service offering for my employer at the time directly off the back of it. This is the kind of attack your help desk is going to start seeing — if it isn't already.</div>
+              </div>
+              <div class="tier-rate">
+                <div style="font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase">AI &amp; Social Eng.</div>
+              </div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">02</div>
+              <div>
+                <div class="tier-name">Email Security Bypass — Major North American Bank</div>
+                <div class="tier-eta">Red Team Infrastructure · 2021–2022</div>
+                <div class="tier-copy">Built phishing infrastructure that defeated the bank's enterprise email security sandbox and put live payloads in user inboxes without a single flag. The setup: CIS-hardened delivery hosts, segmented firewalling that kept the vendor's inspection traffic out, and Apache mod_rewrite rules that quietly routed the vendor's ASNs and crawlers to a benign decoy while real users got the payload. Most phishing engagements lose at the email gateway. This one didn't.</div>
+              </div>
+              <div class="tier-rate">
+                <div style="font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase">Infrastructure</div>
+              </div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">03</div>
+              <div>
+                <div class="tier-name">Custom C2 Infrastructure — Major U.S. Financial Institution</div>
+                <div class="tier-eta">Internal Red Team Build</div>
+                <div class="tier-copy">Built and deployed the C2 infrastructure that anchored a successful red team engagement against the institution. Custom traffic profiles tuned to their expected egress, layered redirector chains, hardened back-end nodes. I was shadowing the engagement at the time, and the infrastructure I stood up is what carried the breach through. Internally celebrated as one of the more memorable wins of the year.</div>
+              </div>
+              <div class="tier-rate">
+                <div style="font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase">Red Team</div>
+              </div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">04</div>
+              <div>
+                <div class="tier-name">Domain Compromise via SCCM — Enterprise Client</div>
+                <div class="tier-eta">Internal Penetration Test · TrustedSec</div>
+                <div class="tier-copy">Pulled NAA credentials out of the client's SCCM deployment — a gap they thought they'd closed in prior engagements. From the NAA creds, I got onto a server holding cached domain admin credential material, and from there to full domain compromise. The client was visibly surprised when I walked them through it. SCCM is one of those systems most defenders assume is locked down. Most aren't.</div>
+              </div>
+              <div class="tier-rate">
+                <div style="font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase">AD Exploitation</div>
+              </div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">05</div>
+              <div>
+                <div class="tier-name">Inheritance to Domain Admin — Enterprise Client</div>
+                <div class="tier-eta">Internal Penetration Test · TrustedSec</div>
+                <div class="tier-copy">Found an obscure security group with way too many permissions, granted via inheritance every prior assessment had missed. Used a low-priv account to add a rogue user into Domain Admins. The detection workflow caught it and fired an alert — but the snowball was already rolling, and I had every existing DA's NT hash before they could finish triaging. The client recognized the work directly during the engagement. Detection isn't worth much if your response window is slower than the attacker's escalation path.</div>
+              </div>
+              <div class="tier-rate">
+                <div style="font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase">AD Exploitation</div>
+              </div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">06</div>
+              <div>
+                <div class="tier-name">Help Desk Pretexting — Major North American Bank</div>
+                <div class="tier-eta">Social Engineering Engagement</div>
+                <div class="tier-copy">Called the help desk pretending to be a Director of Finance. Talked through their verification questions and got the agent to reset credentials for the impersonated user. That single phone call gave the engagement its initial foothold and unlocked everything that came after. The bank revised help-desk verification procedures across their entire IT support organization as a direct result.</div>
+              </div>
+              <div class="tier-rate">
+                <div style="font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase">Social Eng.</div>
+              </div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">07</div>
+              <div>
+                <div class="tier-name">CISO Impersonation — Major Multinational Bank</div>
+                <div class="tier-eta">Phishing &amp; Identity Bypass · TrustedSec</div>
+                <div class="tier-copy">Phished initial credentials, then walked through a stack of identity verification the help desk threw at me when I called for a password reset. Got past all of it and ended up with authenticated access as the bank's CISO. The verification controls were real — they just weren't enough against an operator willing to do the pretext prep. If your verification process can be defeated by a confident voice and 20 minutes of OSINT, it's not a verification process.</div>
+              </div>
+              <div class="tier-rate">
+                <div style="font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase">Phishing</div>
+              </div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">08</div>
+              <div>
+                <div class="tier-name">75%+ Phishing Compromise — Mid-Market Enterprise</div>
+                <div class="tier-eta">Phishing Assessment · Optiv</div>
+                <div class="tier-copy">Targeted phishing assessment against a defined user list. Caught more than three-quarters of them — well past where industry averages sit. The client's response was to politely ask that I not phish them again. I took that as the most honest review I'd received that year.</div>
+              </div>
+              <div class="tier-rate">
+                <div style="font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase">Phishing</div>
+              </div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">09</div>
+              <div>
+                <div class="tier-name">Sock Puppet Methodology — Internal Capability</div>
+                <div class="tier-eta">Red Team Tradecraft</div>
+                <div class="tier-copy">Wrote the team's methodology for building and maintaining sock puppet identities at nation-state-level fidelity — backstopping, infrastructure hygiene, behavioral consistency, longevity, compartmentalization. My boss was impressed enough that he made every red team member start their own. The OSINT and social engineering work that followed was meaningfully better for it.</div>
+              </div>
+              <div class="tier-rate">
+                <div style="font-family:'DM Mono',monospace;font-size:0.6rem;color:var(--muted);letter-spacing:0.08em;text-transform:uppercase">Methodology</div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="callout" style="margin-top:1.5rem">
+            <strong>Confidentiality:</strong> All work was performed under contract through prior employers — TrustedSec, BMO Harris, Optiv, JPMorgan Chase. Client names, dates, target systems, and identifying technical specifics are out. References available under NDA on request — <a href="contact.html">reach out</a> if you want to talk to someone who can vouch for the work directly.
+          </div>
+
+          <div class="callout">
+            <strong>What's not here:</strong> Routine assessments, defensive engagements, and the bulk of vulnerability work that didn't have a story attached. The ones above are the engagements I remember. <a href="contact.html">Reach out</a> if you want to talk about a similar one against your own environment.
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-section">
+      <div class="contact-pad">
+        <div class="container">
+          <div class="eyebrow">Contact</div>
+          <h2>Want this kind of work on your environment?</h2>
+          <p style="font-size:0.875rem;color:var(--muted);max-width:460px;line-height:1.75;margin-bottom:1.5rem">
+            Tell me what you want tested — internal AD, your help desk, your AI product, your cloud posture. 15 minutes is enough to figure out if there's an engagement worth scoping.
+          </p>
+          <a href="contact.html" class="btn btn-solid">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container-wide">
+      <span class="fc">© 2026 Ohm Security Advisory · Shane Jones</span>
+      <span class="fc">OSCP · GRTE · GCP SME · Independent</span>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
