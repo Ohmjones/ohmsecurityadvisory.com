@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e2124">
+  <meta name="author" content="Shane Jones">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <title>Projects &amp; Tools — Public GitHub Work | Ohm Security Advisory</title>
+  <meta name="description" content="Public security tooling and projects on GitHub from Shane Jones — GCP Kit modules for cloud OSINT and BigQuery auditing, OSCP-era enumeration tooling, and other open-source work.">
+
+  <link rel="canonical" href="https://ohmsecurityadvisory.com/projects.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ohm Security Advisory">
+  <meta property="og:title" content="Projects &amp; Tools — Public GitHub Work">
+  <meta property="og:description" content="Public security tooling — GCP Kit modules for cloud OSINT and BigQuery auditing, plus older offensive security tools.">
+  <meta property="og:url" content="https://ohmsecurityadvisory.com/projects.html">
+  <meta property="og:image" content="https://ohmsecurityadvisory.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Projects &amp; Tools — Ohm Security Advisory">
+  <meta name="twitter:description" content="Public security tooling on GitHub — GCP Kit, enumeration tools, and more.">
+  <meta name="twitter:image" content="https://ohmsecurityadvisory.com/og-image.png">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav>
+    <div class="container-wide">
+      <a href="index.html" class="logo">OHM<span>/</span>SECURITY</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <div class="nav-links" id="primary-nav">
+        <a href="about.html">About</a>
+        <a href="cloud-security.html">Cloud Security</a>
+        <a href="ai-ml-security.html">AI/ML Security</a>
+        <a href="secure-development.html">Secure Development</a>
+        <a href="engagements.html">Engagements</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html" class="nav-cta">Get in touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <header class="page-header">
+      <div class="container">
+        <div class="eyebrow">Projects &amp; Tools</div>
+        <h1>Public code, public on GitHub.</h1>
+        <p>A small selection of tools I've published over the years. Most of the work I've done across a decade of consulting is either IP belonging to former employers or specific to active client engagements — none of that is here. What's below is what I've put in the open.</p>
+      </div>
+    </header>
+
+    <!-- GCP Kit section -->
+    <section class="section">
+      <div class="section-pad">
+        <div class="container">
+
+          <div class="eyebrow">GCP Kit</div>
+          <h2>A modular GCP penetration testing framework.</h2>
+          <p class="lead">Modules I've built and published toward a broader GCP-focused offensive framework. Development is currently paused while I focus on client work, but the modules below are functional and on GitHub.</p>
+
+          <div class="tiers">
+
+            <div class="tier">
+              <div class="tier-id">01</div>
+              <div>
+                <div class="tier-name">gcp_identifier</div>
+                <div class="tier-eta">Cloud OSINT · Python · 5 stars</div>
+                <div class="tier-copy">OSINT module for tying GCP-hosted endpoints to a specific target domain. Mostly passive, with a small set of active techniques where the value justifies it. Useful when you've got a target and need to figure out what GCP-hosted assets they actually have exposed.</div>
+              </div>
+              <div class="tier-rate">
+                <a href="https://github.com/Ohmjones/gcp_identifier" target="_blank" rel="noopener">View on GitHub →</a>
+              </div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">02</div>
+              <div>
+                <div class="tier-name">gcp_bqhunter</div>
+                <div class="tier-eta">Cloud Auditing · Python</div>
+                <div class="tier-copy">Audits BigQuery datasets — including hidden ones — for unprotected secrets. Built off the back of real engagement findings where credentials, tokens, and other sensitive material were sitting in places people forgot to lock down. Walks the dataset surface a defender wouldn't think to check.</div>
+              </div>
+              <div class="tier-rate">
+                <a href="https://github.com/Ohmjones/gcp_bqhunter" target="_blank" rel="noopener">View on GitHub →</a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Other public projects -->
+    <section class="section">
+      <div class="section-pad">
+        <div class="container">
+
+          <div class="eyebrow">Other Public Work</div>
+          <h2>Tooling and shipped software.</h2>
+          <p class="lead">Older offensive tooling and a working production application — proof that the engineering side of the practice isn't theoretical.</p>
+
+          <div class="tiers">
+
+            <div class="tier">
+              <div class="tier-id">03</div>
+              <div>
+                <div class="tier-name">DarkEnumeration</div>
+                <div class="tier-eta">OSCP-era Enumeration · 30 stars · 17 forks</div>
+                <div class="tier-copy">Automated enumeration and profiling tool I built to grind the OSCP back in the 2015–2017 era of the exam. Hand-coded, no fancy frameworks. Probably doesn't work against anything modern, but the star and fork counts are real and reflect that other people found it useful at the time. Kept public for posterity.</div>
+              </div>
+              <div class="tier-rate">
+                <a href="https://github.com/Ohmjones/DarkEnumeration" target="_blank" rel="noopener">View on GitHub →</a>
+              </div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">04</div>
+              <div>
+                <div class="tier-name">CTPreg</div>
+                <div class="tier-eta">OffSec CTP Registration Solver</div>
+                <div class="tier-copy">When OffSec's Cracking the Perimeter (CTP) course was still a thing, you had to solve a registration challenge to enroll. CTPreg automates the full attack chain end-to-end and produces the registration code. Was private until OffSec retired the course. Now public for anyone who wants to study how the chain worked. Hand-coded, no frameworks.</div>
+              </div>
+              <div class="tier-rate">
+                <a href="https://github.com/Ohmjones/CTPreg" target="_blank" rel="noopener">View on GitHub →</a>
+              </div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">05</div>
+              <div>
+                <div class="tier-name">Snowballin</div>
+                <div class="tier-eta">Automated Trading Bot · Python</div>
+                <div class="tier-copy">A real shipped application — automated trading bot for the Kraken exchange. Dollar-cost averages into selected assets and opportunistically buys dips and sells peaks to compound returns faster than straight DCA. API integrations, scheduled execution, persistence, error handling, the rest of what a real piece of software needs to actually run. Outside the security domain, but the kind of work I do under the <a href="secure-development.html" style="color:var(--orange);text-decoration:none">Secure Development</a> practice.</div>
+              </div>
+              <div class="tier-rate">
+                <a href="https://github.com/Ohmjones/Snowballin" target="_blank" rel="noopener">View on GitHub →</a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="callout" style="margin-top:1.5rem">
+            <strong>Why isn't there more here?</strong> Most of the code I've written over the last decade is IP that belongs to former employers, or is part of active client engagements that won't see daylight. Some of what's not on GitHub: custom C2 infrastructure, red team tooling for AD exploitation, AI-assisted social engineering frameworks, and internal automation. That's the nature of the work — most of it stays private.
+          </div>
+
+          <div class="callout">
+            <strong>Full GitHub:</strong> <a href="https://github.com/Ohmjones" target="_blank" rel="noopener">github.com/Ohmjones</a> — includes the projects above plus forks of tooling I use day-to-day.
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-section">
+      <div class="contact-pad">
+        <div class="container">
+          <div class="eyebrow">Contact</div>
+          <h2>Want something built?</h2>
+          <p style="font-size:0.875rem;color:var(--muted);max-width:460px;line-height:1.75;margin-bottom:1.5rem">
+            Custom security tooling, internal frameworks, or product work — see the <a href="secure-development.html" style="color:var(--orange);text-decoration:none">Secure Development</a> page for engagement structure, or reach out directly.
+          </p>
+          <a href="contact.html" class="btn btn-solid">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container-wide">
+      <span class="fc">© 2026 Ohm Security Advisory · Shane Jones</span>
+      <span class="fc">OSCP · GRTE · GCP SME · Independent</span>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
