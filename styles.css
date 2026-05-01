@@ -14,8 +14,10 @@
   --bg:       #1e2124;
   --surface:  #252830;
   --border:   #32363c;
-  --muted:    #585d64;
+  --muted:    #878C93;   /* was #585d64 — now ~4.78:1, passes WCAG AA */
   --text:     #EDEDED;
+  --text-2:   #BCC1C8;   /* paragraph copy — ~8.93:1, passes WCAG AAA */
+  --text-3:   #A0A5AC;   /* lead/intro copy — ~6.52:1, passes WCAG AA+ */
 }
 
 html { scroll-behavior: smooth; }
@@ -201,10 +203,10 @@ nav .container-wide { display: flex; align-items: center; justify-content: space
   opacity: 0;
   animation: fadeUp 0.5s 0.12s forwards;
 }
-.hero h1 em { font-style: italic; color: #a0a5ac; }
+.hero h1 em { font-style: italic; color: var(--text-3); }
 .hero-sub {
   font-size: 0.9rem;
-  color: #7e838a;
+  color: var(--text-2);
   line-height: 1.8;
   max-width: 460px;
   margin-bottom: 1.75rem;
@@ -293,7 +295,7 @@ nav .container-wide { display: flex; align-items: center; justify-content: space
 }
 .page-header p {
   font-size: 0.92rem;
-  color: #7e838a;
+  color: var(--text-2);
   line-height: 1.75;
   max-width: 540px;
 }
@@ -359,7 +361,7 @@ h2 {
 }
 .service-card-desc {
   font-size: 0.82rem;
-  color: #72777e;
+  color: var(--text-2);
   line-height: 1.7;
   margin-bottom: 1.2rem;
   flex-grow: 1;
@@ -387,7 +389,7 @@ h2 {
 .tier-id { font-family: 'DM Mono', monospace; font-size: 0.62rem; color: var(--orange); letter-spacing: 0.08em; padding-top: 3px; }
 .tier-name { font-size: 0.92rem; font-weight: 500; color: var(--offwhite); margin-bottom: 0.2rem; }
 .tier-eta { font-family: 'DM Mono', monospace; font-size: 0.65rem; color: var(--muted); margin-bottom: 0.55rem; }
-.tier-copy { font-size: 0.83rem; color: #72777e; line-height: 1.65; max-width: 460px; }
+.tier-copy { font-size: 0.83rem; color: var(--text-2); line-height: 1.65; max-width: 460px; }
 .tier-rate { text-align: right; white-space: nowrap; padding-top: 3px; }
 .tier-rate a { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.05em; color: var(--orange); text-decoration: none; }
 .tier-rate a:hover { color: var(--copper); }
@@ -407,7 +409,7 @@ h2 {
 
 /* ── About ── */
 .about-cols { display: grid; grid-template-columns: 1fr 280px; gap: 3rem; align-items: start; }
-.about-copy { font-size: 0.875rem; color: #7e838a; line-height: 1.85; }
+.about-copy { font-size: 0.875rem; color: var(--text-2); line-height: 1.85; }
 .about-copy p + p { margin-top: 0.9rem; }
 .about-copy strong { color: var(--offwhite); font-weight: 400; }
 .skills { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1.5rem; }
@@ -417,7 +419,7 @@ h2 {
   letter-spacing: 0.06em;
   padding: 0.25rem 0.6rem;
   border: 1px solid var(--border);
-  color: var(--graphite);
+  color: var(--muted);
   background: var(--surface);
 }
 .timeline { display: flex; flex-direction: column; }
