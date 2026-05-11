@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#1e2124">
+  <meta name="author" content="Shane Jones">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <title>BSides SATX 2026 — LLM-Assisted Phishing in Practice | Ohm Security Advisory</title>
+  <meta name="description" content="Talk resources for LLM-Assisted Phishing in Practice — Shane Jones at BSides San Antonio 2026. Defender takeaways, slides, and a BSides-only AI exposure recon offer for the first five inquiries.">
+  <meta name="keywords" content="BSides SATX, BSides San Antonio, LLM phishing, AI voice cloning, AI-assisted social engineering, Shane Jones, Ohm Security Advisory, AI red team">
+
+  <link rel="canonical" href="https://ohmsecurityadvisory.com/bsides-satx.html">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Ohm Security Advisory">
+  <meta property="og:title" content="BSides SATX 2026 — LLM-Assisted Phishing in Practice">
+  <meta property="og:description" content="Real engagement walkthrough. Cloned executive voice, help-desk pretext, network admin credentials in five minutes. Defender takeaways and a BSides-only engagement offer.">
+  <meta property="og:url" content="https://ohmsecurityadvisory.com/bsides-satx.html">
+  <meta property="og:image" content="https://ohmsecurityadvisory.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BSides SATX 2026 — LLM-Assisted Phishing in Practice">
+  <meta name="twitter:description" content="Cloned executive voice, help-desk pretext, network admin credentials in five minutes. Defender takeaways and a BSides-only offer.">
+  <meta name="twitter:image" content="https://ohmsecurityadvisory.com/og-image.png">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://ohmsecurityadvisory.com/bsides-satx.html",
+        "name": "BSides SATX 2026 — LLM-Assisted Phishing in Practice",
+        "description": "Talk resources, defender takeaways, and a BSides SATX-only engagement offer.",
+        "url": "https://ohmsecurityadvisory.com/bsides-satx.html"
+      },
+      {
+        "@type": "Event",
+        "name": "LLM-Assisted Phishing in Practice",
+        "description": "First public presentation of the AI-assisted phishing methodology built at TrustedSec. Walks through a real adversary simulation against a national enterprise — cloned executive voice, help-desk pretext, network admin credentials in about five minutes.",
+        "startDate": "TBD-FILL-WHEN-CONFIRMED",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "BSides San Antonio 2026",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Antonio",
+            "addressRegion": "TX",
+            "addressCountry": "US"
+          }
+        },
+        "performer": {
+          "@type": "Person",
+          "name": "Shane Jones",
+          "url": "https://ohmsecurityadvisory.com/about.html"
+        },
+        "organizer": { "@type": "Organization", "name": "BSides San Antonio", "url": "https://bsidessatx.com/" }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <nav>
+    <div class="container-wide">
+      <a href="index.html" class="logo">OHM<span>/</span>SECURITY</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <div class="nav-links" id="primary-nav">
+        <a href="about.html">About</a>
+        <div class="nav-dropdown">
+          <button class="nav-dropdown-trigger" aria-expanded="false" aria-haspopup="true">Services <span class="caret">▾</span></button>
+          <div class="nav-dropdown-menu">
+            <a href="cloud-security.html">Cloud Security</a>
+            <a href="ai-ml-security.html">AI/ML Security</a>
+            <a href="secure-development.html">Secure Development</a>
+          </div>
+        </div>
+        <a href="engagements.html">Engagements</a>
+        <a href="projects.html">Projects</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="contact.html" class="nav-cta">Get in touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <header class="page-header">
+      <div class="container">
+        <div class="eyebrow">BSides SATX 2026 · Speaker</div>
+        <h1>LLM-Assisted Phishing in Practice.</h1>
+        <p>Talk resources, defender takeaways, and a BSides SATX–only engagement offer for the first five inquiries. If you saw the talk, this is where to start.</p>
+      </div>
+    </header>
+
+    <!-- The talk -->
+    <section class="section">
+      <div class="section-pad">
+        <div class="container">
+          <div class="eyebrow">The Talk</div>
+          <h2>What was covered.</h2>
+          <p class="lead">A real adversary simulation engagement against a national enterprise. Cloned an executive's voice from a single podcast appearance, ran a phishing call against the organization's help desk, walked away with high-privilege network admin credentials about five minutes in. The talk walks the full setup — what worked, what didn't, what I'd do differently.</p>
+          <p style="font-size:0.95rem;color:var(--muted);line-height:1.85;margin-top:1rem">First public presentation of the original work. Built the methodology at TrustedSec where it grew from an internal experiment into a billable service. A colleague later included aspects of this engagement in a talk at Wild West Hackin' Fest. This talk covers engagement detail not in the prior presentation, presented by the original operator.</p>
+          <p style="font-size:0.85rem;color:var(--muted);line-height:1.7;margin-top:1.25rem">Practitioner-focused. No vendor pitch. Reproducible with any frontier LLM and a commercial voice-cloning service.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Defender takeaways -->
+    <section class="section">
+      <div class="section-pad">
+        <div class="container">
+          <div class="eyebrow">Defender Takeaways</div>
+          <h2>Three things worth changing Monday morning.</h2>
+          <p class="lead">If you do nothing else with what was in the talk, do these three. Each is concrete, scoped to a team, and works against the attack class the talk covers.</p>
+
+          <div class="tiers">
+
+            <div class="tier">
+              <div class="tier-id">DT-1</div>
+              <div>
+                <div class="tier-name">Out-of-band verification for credential and high-privilege actions</div>
+                <div class="tier-eta">Help desk procedure</div>
+                <div class="tier-copy">A phone call to a help desk is in-band — the same channel the attacker is on. Out-of-band means a callback to a number on file with HR, a manager confirmation through an independent channel, or an MFA push to a known device. Mandate it for credential resets, MFA resets, and any high-privilege account change. The agent should never be the sole verifier. The script the talk demonstrates defeated everything inside the call. Outside it, the same script falls apart.</div>
+              </div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">DT-2</div>
+              <div>
+                <div class="tier-name">Agent training that specifically covers AI voice and LLM-assisted pretexting</div>
+                <div class="tier-eta">Training program</div>
+                <div class="tier-copy">Generic social engineering awareness doesn't cover what's happening now. Agents need to hear cloned voice samples, see what an LLM-written pretext reads like, and know that "this feels off, let me call you back" is a sanctioned response — not a career risk. Authority limits need to be written down. Pressure tactics need to be named. The talk's call worked because the agent had no playbook for what was actually happening.</div>
+              </div>
+            </div>
+
+            <div class="tier">
+              <div class="tier-id">DT-3</div>
+              <div>
+                <div class="tier-name">Time detection-to-response against realistic attacker escalation</div>
+                <div class="tier-eta">Detection engineering · IR</div>
+                <div class="tier-copy">Detection alone doesn't help if the attacker pivots faster than your triage window. Walk your runbooks against a five-minute escalation timeline, not a tabletop scenario. Where can a credential be used between issuance and revocation? Which controls block lateral movement during the window where the alert is sitting in a queue? The answer reveals whether your detection program is actually defending anything.</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Slide deck -->
+    <section class="section">
+      <div class="section-pad">
+        <div class="container">
+          <div class="eyebrow">Slides</div>
+          <h2>The deck.</h2>
+          <p class="lead">Available after the live talk. Email me and I'll send it directly, or check back once it's posted here.</p>
+          <a href="mailto:shane@ohmsecurityadvisory.com?subject=BSIDES-SATX%20%E2%80%94%20Slide%20deck%20request" class="btn btn-outline" style="margin-top:1rem">Request the deck →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services teaser -->
+    <section class="section">
+      <div class="section-pad">
+        <div class="container">
+          <div class="eyebrow">Services</div>
+          <h2>The methodology is a service.</h2>
+          <p class="lead">If your help desk, AI product, or LLM application needs to be tested before someone else does it, the engagement structure is on the AI/ML Security page. The shortest path to an answer:</p>
+
+          <div class="tiers">
+            <div class="tier">
+              <div class="tier-id">AI-T1</div>
+              <div>
+                <div class="tier-name">LLM Red-Team Assessment</div>
+                <div class="tier-eta">2 weeks · fixed-fee</div>
+                <div class="tier-copy">Adversarial testing against a target LLM application or AI-assisted social engineering scenario. Prompt injection, jailbreak resistance, system prompt extraction, RAG poisoning where applicable, voice and pretext work where in scope. Full report with reproduction steps and severity ranking.</div>
+              </div>
+              <div class="tier-rate"><a href="ai-ml-security.html">All tiers →</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The BSides offer -->
+    <section class="section">
+      <div class="section-pad">
+        <div class="container">
+          <div class="eyebrow">BSides SATX Only</div>
+          <h2>Free AI Exposure Recon — first five.</h2>
+          <p class="lead">First five inquiries through this page get a free AI-T0 Exposure Recon engagement. No catch, no contract bait. If the report comes back clean, it says so.</p>
+
+          <div class="callout" style="border-left-color:var(--orange)">
+            <strong>Scope of the recon:</strong> Public-facing AI surface check — exposed model endpoints (Ollama, vLLM, LangServe), unprotected vector databases, leaked LLM provider keys, Gradio and Streamlit deployments without auth. Snapshot report with each finding mapped to remediation. 2–3 business days delivery once scoped.
+          </div>
+
+          <div class="callout">
+            <strong>How to claim:</strong> Email <a href="mailto:shane@ohmsecurityadvisory.com?subject=BSIDES-SATX%20%E2%80%94%20Free%20AI-T0%20Recon" class="clink">shane@ohmsecurityadvisory.com</a> with the subject <strong>BSIDES-SATX — Free AI-T0 Recon</strong>. Include your domain. First five emails win. Scoping call must hit the calendar within 90 days of the talk; report delivery on standard AI-T0 turnaround once kicked off.
+          </div>
+
+          <div class="callout">
+            <strong>Doesn't quite fit?</strong> Some environments don't have a meaningful public-facing AI surface yet. If yours doesn't, but you want a look at help-desk verification, agent platform security, or internal LLM applications, reach out anyway. The offer flexes for clear in-kind work at the AI-T0 level of effort.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-section">
+      <div class="contact-pad">
+        <div class="container">
+          <div class="eyebrow">Contact</div>
+          <h2>Talk through your environment.</h2>
+          <p style="font-size:0.875rem;color:var(--muted);max-width:420px;line-height:1.75;margin-bottom:1.5rem">
+            Help desk, AI product, or cloud posture. 15 minutes is enough to figure out whether there's an engagement worth scoping.
+          </p>
+          <a href="contact.html" class="btn btn-solid">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container-wide">
+      <span class="fc">© <span class="copyright-year">2026</span> Ohm Security Advisory · Shane Jones</span>
+      <span class="fc">OSCP · GRTE · GCP SME · Independent</span>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+</body>
+</html>
