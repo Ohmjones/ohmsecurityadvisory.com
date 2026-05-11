@@ -40,40 +40,65 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "mainEntity": {
-      "@type": "Person",
-      "name": "Shane Jones",
-      "jobTitle": "Principal Security Consultant",
-      "description": "Independent offensive security consultant with 10+ years of experience in adversary simulation, penetration testing, and cloud security across roughly 160 enterprise engagements.",
-      "url": "https://ohmsecurityadvisory.com/about.html",
-      "image": "https://ohmsecurityadvisory.com/og-image.png",
-      "worksFor": {
-        "@type": "ProfessionalService",
-        "name": "Ohm Security Advisory",
-        "url": "https://ohmsecurityadvisory.com/"
+    "@graph": [
+      {
+        "@type": "ProfilePage",
+        "mainEntity": {
+          "@id": "https://ohmsecurityadvisory.com/about.html#shane",
+          "@type": "Person",
+          "name": "Shane Jones",
+          "jobTitle": "Principal Security Consultant",
+          "description": "Independent offensive security consultant with 10+ years of experience in adversary simulation, penetration testing, and cloud security across roughly 160 enterprise engagements.",
+          "url": "https://ohmsecurityadvisory.com/about.html",
+          "image": "https://ohmsecurityadvisory.com/og-image.png",
+          "worksFor": {
+            "@type": "ProfessionalService",
+            "name": "Ohm Security Advisory",
+            "url": "https://ohmsecurityadvisory.com/"
+          },
+          "alumniOf": [
+            { "@type": "Organization", "name": "TrustedSec" },
+            { "@type": "Organization", "name": "BMO Harris" },
+            { "@type": "Organization", "name": "Optiv Security" },
+            { "@type": "Organization", "name": "JPMorgan Chase" },
+            { "@type": "Organization", "name": "United States Air Force" }
+          ],
+          "knowsAbout": [
+            "AI Security", "LLM Red Teaming", "Prompt Injection", "RAG Security",
+            "GCP Red Team", "Vertex AI Security", "AWS Security", "Azure Security",
+            "Identity and Access Management", "Penetration Testing", "Adversary Simulation",
+            "Secure Software Development", "Threat Modeling", "OWASP LLM Top 10"
+          ],
+          "hasCredential": [
+            { "@type": "EducationalOccupationalCredential", "name": "Offensive Security Certified Professional (OSCP)" },
+            { "@type": "EducationalOccupationalCredential", "name": "GCP Red Team Expert (GRTE)" }
+          ],
+          "sameAs": [
+            "https://www.linkedin.com/in/ohmsecurities/"
+          ]
+        }
       },
-      "alumniOf": [
-        { "@type": "Organization", "name": "TrustedSec" },
-        { "@type": "Organization", "name": "BMO Harris" },
-        { "@type": "Organization", "name": "Optiv Security" },
-        { "@type": "Organization", "name": "JPMorgan Chase" },
-        { "@type": "Organization", "name": "United States Air Force" }
-      ],
-      "knowsAbout": [
-        "AI Security", "LLM Red Teaming", "Prompt Injection", "RAG Security",
-        "GCP Red Team", "Vertex AI Security", "AWS Security", "Azure Security",
-        "Identity and Access Management", "Penetration Testing", "Adversary Simulation",
-        "Secure Software Development", "Threat Modeling", "OWASP LLM Top 10"
-      ],
-      "hasCredential": [
-        { "@type": "EducationalOccupationalCredential", "name": "Offensive Security Certified Professional (OSCP)" },
-        { "@type": "EducationalOccupationalCredential", "name": "GCP Red Team Expert (GRTE)" }
-      ],
-      "sameAs": [
-        "https://www.linkedin.com/in/ohmsecurities/"
-      ]
-    }
+      {
+        "@type": "Event",
+        "name": "LLM-Assisted Phishing in Practice",
+        "description": "First public presentation of the AI-assisted phishing methodology built at TrustedSec. Walks through a real adversary simulation against a national enterprise — cloned executive voice, help-desk pretext, network admin credentials in about five minutes. Covers what worked, what didn't, and what defenders should change.",
+        "startDate": "TBD-FILL-WHEN-CONFIRMED",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "BSides San Antonio 2026",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "San Antonio",
+            "addressRegion": "TX",
+            "addressCountry": "US"
+          }
+        },
+        "performer": { "@id": "https://ohmsecurityadvisory.com/about.html#shane" },
+        "organizer": { "@type": "Organization", "name": "BSides San Antonio", "url": "https://bsidessatx.com/" }
+      }
+    ]
   }
   </script>
 </head>
@@ -193,6 +218,17 @@
           <p class="lead">Public appearances and conversations about the work. More to come as the AI security practice expands.</p>
 
           <div class="tiers">
+            <div class="tier">
+              <div class="tier-id">P-2</div>
+              <div>
+                <div class="tier-name">LLM-Assisted Phishing in Practice — BSides SATX 2026</div>
+                <div class="tier-eta">Speaker · Upcoming</div>
+                <div class="tier-copy">First public presentation of the AI-assisted phishing methodology I built at TrustedSec. Walks through a real adversary simulation against a national enterprise — executive voice cloned from a single podcast appearance, help-desk pretext, network admin credentials in about five minutes. Covers what worked, what didn't, where defensive controls catch this kind of operation and where they don't. Practitioner-focused, no vendor pitch. The same methodology I run under <a href="ai-ml-security.html" style="color:var(--orange);text-decoration:none">AI/ML Security</a> engagements.</div>
+              </div>
+              <div class="tier-rate">
+                <a href="contact.html">Get in touch →</a>
+              </div>
+            </div>
             <div class="tier">
               <div class="tier-id">P-1</div>
               <div>
